@@ -1,0 +1,184 @@
+/* iPhone 6+, 7+, 8+ w414 h622 */
+/* iPhone 6, 7, 8 w375 h544 */
+/* iPhone X w375 h738 */
+
+/* Galaxy S7, S8, S9 w360 h740 */
+/* LG G5, Galaxy Note 5 w480 h853 */
+/* Nexus, Google Pixel w441 h731 */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+  color: #434343;
+  max-width: 480px;
+  max-height: 853px;
+}
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+#app,
+.container {
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'georgiai';
+  src: url('font/georgiai.ttf'),
+        local('sans-serif');
+}
+
+@font-face {
+  font-family: 'korean';
+  src: url('font/korean.ttf'),
+        local('sans-serif');
+}
+
+.georgiai {
+  font-family: 'georgiai';
+}
+
+.korean {
+  font-family: 'korean';
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 300%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/static/img/1-1.jpg);
+  /* opacity: .3; */
+}
+
+.dimmed {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.page-wrapper {
+  opacity: .9;
+  width: 90%;
+  height: 90%;
+  background-color: #dfddd0;
+  position: relative;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.content-wrapper .flex-item {
+  flex: 1 1 auto;
+}
+
+.green-text {
+  color: #2c5320;
+}
+
+.black-text {
+  color: #424242;
+}
+
+/* w376 이상 단말 */
+/* 큰 단말 */
+@media screen and (min-width: 375px) {
+  html, body {
+    min-width: 375px;
+    min-height: 622px;
+  }
+  .header {
+    font-size: 18px;
+  }
+}
+
+/* w375px 이하 단말 */
+/* 작은 단말 */
+@media screen and (max-width: 374px) {
+  html, body {
+    min-width: 320px;
+    min-height: 544px;
+  }
+  .header {
+    font-size: 15px;
+  }
+  .title {
+    font-size: 24px !important;
+  }
+  .title .line {
+    width: 80px !important;
+    height: 1.5px !important;
+  }
+  .intro .content-wrapper .description .time {
+    font-size: 22px !important;
+  }
+  .intro .content-wrapper .description .location {
+    font-size: 16px !important;
+  }
+  .intro .content-wrapper .name span {
+    font-size: 16px !important;
+  }
+  .intro .content-wrapper .name img {
+    width: 30px !important;
+  }
+  .invitation .content-wrapper .message {
+    font-size: 18px !important;
+  }
+  .invitation .content-wrapper .parents .table-wrapper {
+    font-size: 16px !important;
+  }
+  .invitation .content-wrapper .parents .table-wrapper table {
+    margin: 10px 0 !important;
+  }
+  .invitation .content-wrapper .parents .table-wrapper table td {
+    font-size: 20px !important;
+  }
+  .invitation .content-wrapper .parents .table-wrapper table td.small {
+    font-size: 14px !important;
+  }
+  .invitation .content-wrapper .parents .table-wrapper table td.bold {
+    font-size: 20px !important;
+  }
+  .invitation .content-wrapper .description .time {
+    font-size: 22px !important;
+  }
+  .invitation .content-wrapper .description .location {
+    font-size: 16px !important;
+  }
+  .location .content-wrapper .address .address-detail {
+    font-size: 16px !important;
+  }
+  .location .content-wrapper .address .address-detail-small {
+    font-size: 10px !important;
+    line-height: 15px;
+  }
+  .location .content-wrapper .transportation div {
+    margin: 5px 0 !important;
+  }
+  .location .content-wrapper .transportation {
+    font-size: 10px !important;
+  }
+  .location .content-wrapper .transportation span.small {
+    font-size: 9px !important;
+  }
+  .location .content-wrapper .buttons a {
+    height: 18px !important;
+  }
+  .location .content-wrapper .buttons img {
+    height: 18px !important;
+  }
+}
